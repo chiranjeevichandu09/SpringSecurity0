@@ -80,4 +80,9 @@ public class UserController {
     }
 //using resttemplate pass the token of this home url token to the other microservice api there i have to check that this token is validate or not
 
+    @GetMapping("/about")
+    public ResponseEntity<String> about()
+    {
+    	return ResponseEntity.ok("This Website holds User details");
+    }
 }
